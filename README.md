@@ -19,6 +19,7 @@ git submodule update --init --rebase --recursive
 cd miasm
 pip install -r requirements.txt
 pip install .
+cd ..
 ```
 
 ## Contact
