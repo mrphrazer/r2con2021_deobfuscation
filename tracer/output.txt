@@ -1,0 +1,1612 @@
+0x4060: PUSH 0x0
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x0
+		======================
+		========VARS=========
+		=====================
+0x4065: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x0
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+		=====================
+0x406A: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+		=====================
+0x406B: PUSH 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+		=====================
+0x4070: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+		=====================
+0x4075: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+		=====================
+0x4076: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+		=====================
+0x407B: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+		=====================
+0x407C: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+		=====================
+0x4081: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+		=====================
+0x4082: GOTO 0x4087
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+		=====================
+0x4087: PUSH 0x0
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+		=====================
+0x408C: if [V_PC+1] == 0: push [r8] (0x0 == 0)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x0
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFED4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x4091: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x0
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x4092: 0x5 == 0x0 (false)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x4093: VM_COND_JUMP 0x409D (not taken)
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x4098: GOTO 0x40B2
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x40B2: PUSH 0x2
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x40B7: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+		=====================
+0x40BC: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40BD: GOTO 0x40C2
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40C2: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40C7: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40C8: if [V_PC+1] == 0: push [r8] (0x0 == 0)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFED4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40CD: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40CE: 0x2 <= 0x5 (true)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40CF: VM_COND_JUMP 0x40DE (taken)
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40DE: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40E3: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40E4: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40E9: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40EA: [VM_STACK] = 0x0 + 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40EB: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40F0: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40F1: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40F6: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40F7: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x0
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40FC: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x40FD: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4102: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4103: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4108: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4109: PUSH 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x410E: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4113: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4114: [VM_STACK] = 0x2 + 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x4115: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x2
+		=====================
+0x411A: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x411B: GOTO 0x1000040C2
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40C2: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40C7: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40C8: if [V_PC+1] == 0: push [r8] (0x0 == 0)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFED4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40CD: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40CE: 0x3 <= 0x5 (true)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40CF: VM_COND_JUMP 0x40DE (taken)
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40DE: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40E3: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40E4: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40E9: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40EA: [VM_STACK] = 0x1 + 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40EB: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40F0: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40F1: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40F6: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40F7: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40FC: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x40FD: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4102: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4103: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4108: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4109: PUSH 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x410E: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4113: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4114: [VM_STACK] = 0x3 + 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x4115: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x4
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x3
+		=====================
+0x411A: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x411B: GOTO 0x1000040C2
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40C2: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40C7: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40C8: if [V_PC+1] == 0: push [r8] (0x0 == 0)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x4
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFED4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40CD: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x4
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40CE: 0x4 <= 0x5 (true)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40CF: VM_COND_JUMP 0x40DE (taken)
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40DE: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40E3: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40E4: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40E9: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40EA: [VM_STACK] = 0x1 + 0x2
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40EB: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40F0: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40F1: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40F6: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40F7: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x2
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x1
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40FC: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x40FD: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4102: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4103: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4108: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4109: PUSH 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x410E: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4113: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4114: [VM_STACK] = 0x4 + 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x4115: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x5
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x4
+		=====================
+0x411A: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x411B: GOTO 0x1000040C2
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40C2: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40C7: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40C8: if [V_PC+1] == 0: push [r8] (0x0 == 0)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFED4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40CD: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40CE: 0x5 <= 0x5 (true)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40CF: VM_COND_JUMP 0x40DE (taken)
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40DE: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40E3: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40E4: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40E9: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x2
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40EA: [VM_STACK] = 0x2 + 0x3
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40EB: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x5
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40F0: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40F1: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40F6: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40F7: PUSH ADDR [RSI+0x4] = RSP + 0xFFFFFFFFFFFFFFDC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x3
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFDC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x2
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40FC: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x40FD: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4102: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4103: PUSH ADDR [RSI+0x8] = RSP + 0xFFFFFFFFFFFFFFE0  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4108: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4109: PUSH 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x410E: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4113: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x1
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4114: [VM_STACK] = 0x5 + 0x1
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x6
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x4115: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFEE8 ==> 0x6
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x5
+		=====================
+0x411A: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x411B: GOTO 0x1000040C2
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40C2: PUSH ADDR [RSI+0x14] = RSP + 0xFFFFFFFFFFFFFFEC  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFEC
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40C7: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x6
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40C8: if [V_PC+1] == 0: push [r8] (0x0 == 0)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x6
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFED4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40CD: [VM_STK] = *VAR
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x6
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40CE: 0x6 <= 0x5 (false)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> 0x0
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40CF: VM_COND_JUMP 0x40DE (not taken)
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40D4: GOTO 0x40D9
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x40D9: GOTO 0x4125
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x4125: PUSH ADDR [RSI+0xC] = RSP + 0xFFFFFFFFFFFFFFE4  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE4
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x412A: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x412B: PUSH ADDR [RSI+0x10] = RSP + 0xFFFFFFFFFFFFFFE8  (push address of local variable)
+		========STACK=========
+			RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		VM_SP => RSP + 0xFFFFFFFFFFFFFEE0 ==> RSP + 0xFFFFFFFFFFFFFFE8
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+		=====================
+0x4130: POP VAR
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+			RSP + 0xFFFFFFFFFFFFFFE8 ==> 0x5
+		=====================
+0x4131: GOTO 0x4136
+		========STACK=========
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+			RSP + 0xFFFFFFFFFFFFFFE8 ==> 0x5
+		=====================
+0x4136: PUSH ADDR [RSI+0x10] = RSP + 0xFFFFFFFFFFFFFFE8  (push address of local variable)
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> RSP + 0xFFFFFFFFFFFFFFE8
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+			RSP + 0xFFFFFFFFFFFFFFE8 ==> 0x5
+		=====================
+0x413B: [VM_STK] = *VAR
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+			RSP + 0xFFFFFFFFFFFFFFE8 ==> 0x5
+		=====================
+0x413C: VM_RET
+================================
+| Result value: 0x5            |
+================================
+		========STACK=========
+		VM_SP => RSP + 0xFFFFFFFFFFFFFED8 ==> 0x5
+		======================
+		========VARS=========
+			RSP + 0xFFFFFFFFFFFFFFDC ==> 0x3
+			RSP + 0xFFFFFFFFFFFFFFE0 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFE4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFED4 ==> 0x5
+			RSP + 0xFFFFFFFFFFFFFFEC ==> 0x6
+			RSP + 0xFFFFFFFFFFFFFFE8 ==> 0x5
+		=====================
